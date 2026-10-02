@@ -1,0 +1,10 @@
+CHANGELOG.md
+LICENSE
+PROVENANCE.md
+README.md
+build-config.json
+dist/addon.css
+dist/addon.js
+package.json
+scripts/build.mjs
+src/ui/recipe-scale-model.mjs

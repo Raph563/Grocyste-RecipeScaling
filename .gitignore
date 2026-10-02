@@ -1,0 +1,24 @@
+node_modules/
+.state/
+*.log
+
+# Private publication/runtime artefacts
+.state/
+private/
+state/
+tmp/
+tmp-*
+__pycache__/
+.pytest_cache/
+node_modules/
+coverage/
+*.pyc
+*.db
+*.db-*
+*.key
+*.pem
+*.pdf
+*.zip
+*.tar
+*.tgz
+docs/screenshots/

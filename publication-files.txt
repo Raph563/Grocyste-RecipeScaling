@@ -1,0 +1,18 @@
+# Explicit public source tree; private state and old captures are excluded.
+.github/workflows/tests.yml
+.gitignore
+CHANGELOG.md
+LICENSE
+PROVENANCE.md
+README.md
+build-config.json
+build-files.txt
+dist/addon.css
+dist/addon.js
+manifest.json
+package.json
+publication-files.txt
+scripts/build.mjs
+src/ui/recipe-scale-model.mjs
+test/package-measures.test.mjs
+test/recipe-scale-model.test.mjs

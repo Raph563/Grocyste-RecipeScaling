@@ -1,0 +1,9 @@
+{
+  "id": "recipe-scaling",
+  "files": [
+    "src/ui/recipe-scale-model.mjs"
+  ],
+  "styles": [],
+  "prefix": "const ADDON_ID=\"recipe-scaling\";const window=globalThis.Grocyste.compatWindow(ADDON_ID);const Grocy=window.Grocy;const fetch=window.fetch;\nwindow.Grocyste.register({id:ADDON_ID,name:\"Quantit\\u00e9s et proportions\",version:'1.0.0'});\nconst EXPECTED_SHOPPING_RANGE_GENERATION=window.Grocyste.configuration().instanceConfig?.shoppingRangeGeneration||null;\nconst MON_GROCY_SHARED_TIMER_ENTITY_ID=window.Grocyste.configuration().instanceConfig?.sharedTimerEntityId||0;\n\n",
+  "suffix": "window.Grocyste.modules.recipeScaling=Object.freeze({buildRecipeScaleInput,formatScaledNumber,recipePivotMeasure,scaleRecipe,pivotAvailability,scaledAvailabilityIngredients,buildInstructionAnnotations,configureRecipePackageMeasures});\nconfigureRecipePackageMeasures(window.Grocyste.configuration().instanceConfig?.recipePackageMeasures||[]);"
+}

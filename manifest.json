@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "recipe-scaling",
+  "name": "Grocyste — Quantités et proportions",
+  "version": "1.0.0",
+  "repository": "Raph563/Grocyste-RecipeScaling",
+  "core": ">=1.0.0 <2.0.0",
+  "grocy": [
+    "4.7.1"
+  ],
+  "dependencies": {},
+  "capabilities": [
+    "grocy.read",
+    "storage"
+  ],
+  "entrypoints": {
+    "browser": "dist/addon.js",
+    "styles": "dist/addon.css"
+  },
+  "files": []
+}
