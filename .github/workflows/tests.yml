@@ -12,9 +12,23 @@ jobs:
   addon:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: Grocyste-RecipeScaling
     steps:
       - name: Récupérer les sources
         uses: actions/checkout@v4
+        with:
+          path: Grocyste-RecipeScaling
+          persist-credentials: false
+      # The existing cross-addon contract reads the neighboring RecipeLive config.
+      - name: Récupérer le contrat RecipeLive qualifié
+        uses: actions/checkout@v4
+        with:
+          repository: Raph563/Grocyste-RecipeLive
+          ref: dd0c89f23fe0ec4e4371c92d11ea0a07e426658f
+          path: Grocyste-RecipeLive
+          persist-credentials: false
       - name: Installer Node.js 24
         uses: actions/setup-node@v4
         with:
