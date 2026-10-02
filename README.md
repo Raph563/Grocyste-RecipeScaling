@@ -2,7 +2,7 @@
 
 RecipeScaling adapte les quantités d’une recette à un nombre de parts ou à un ingrédient pivot. Son moteur est aussi utilisé par Budgets et Recette live.
 
-**Manifeste 1.0.0 · Grocy 4.7.1 · CORE >=1.0.0 <2.0.0 · GPL-3.0-only.**
+**Manifeste 1.0.0 · Grocy 4.7.1 · CORE >=1.0.0 <2.0.0 · GPL-3.0-or-later.**
 
 ## Installer
 
@@ -30,6 +30,14 @@ npm run build
 ```
 
 La CI vérifie tests et construction sans clé privée. Les tests locaux ne remplacent pas la qualification sur une instance Grocy, en cours et à documenter dans le [rapport de compatibilité du CORE](https://github.com/Raph563/Grocyste/blob/main/docs/compatibilite.md).
+
+## Contrôles exécutés pour ce lot
+
+Les tests locaux de ce dépôt ont réussi : **12 tests**, avec Node.js 24, ainsi que `npm run build`. Les neuf dépôts totalisent 164 tests ; ce compte décrit ces suites, pas une validation exhaustive de chaque fonction.
+
+Le parcours recette synthétique confirme le changement de portions via RecipeLive, sans recompter les sous-recettes.
+
+L’enregistrement des neuf addons a été observé dans le navigateur d’un laboratoire Grocy 4.7.1 isolé. Ces exercices ne constituent pas une migration de production ni une preuve de disponibilité publique des assets. Les résultats et limites de la révision finale restent suivis dans le [rapport de compatibilité du CORE](https://github.com/Raph563/Grocyste/blob/main/docs/compatibilite.md).
 
 ## Sources et licence
 

@@ -14,5 +14,6 @@ package.json
 publication-files.txt
 scripts/build.mjs
 src/ui/recipe-scale-model.mjs
+test/browser-config.test.mjs
 test/package-measures.test.mjs
 test/recipe-scale-model.test.mjs
